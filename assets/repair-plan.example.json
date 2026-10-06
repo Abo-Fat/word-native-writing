@@ -1,0 +1,11 @@
+{
+  "source_sha256": "REPLACE_WITH_REPORT_SHA256_FROM_AUDIT",
+  "operations": [
+    {"kind": "heading", "paragraph": 1, "expect": "1 方法", "prefix": "1 ", "level": 1, "bookmark": "ChapterMethod"},
+    {"kind": "caption", "paragraph": 2, "expect": "图1 架构示意", "prefix": "图1", "label": "图", "sequence": "图", "cached": "1", "bookmark": "FigureArchitecture"},
+    {"kind": "script", "paragraph": 3, "expect": "面积为 12 mm²，见图1，依据文献[1]。", "match": "²", "text": "2", "script": "superscript"},
+    {"kind": "replace", "paragraph": 3, "expect": "面积为 12 mm²，见图1，依据文献[1]。", "match": "图1", "parts": [{"ref": "FigureArchitecture", "cached": "图1"}]},
+    {"kind": "replace", "paragraph": 3, "expect": "面积为 12 mm²，见图1，依据文献[1]。", "match": "[1]", "parts": ["[", {"ref": "ReferenceAlpha", "mode": "number", "cached": "1"}, "]"]},
+    {"kind": "bibliography", "paragraph": 4, "expect": "[1] 示例文献", "prefix": "[1] ", "bookmark": "ReferenceAlpha"}
+  ]
+}

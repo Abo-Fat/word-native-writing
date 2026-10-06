@@ -1,0 +1,17 @@
+{
+  "title": "原生 Word 写作示例",
+  "blocks": [
+    {"kind": "toc"},
+    {"kind": "heading", "level": 1, "bookmark": "ChapterMethod", "parts": ["方法"]},
+    {"kind": "paragraph", "parts": ["面积单位为 mm", {"text": "2", "script": "superscript"}, "，变量 I", {"text": "cell", "script": "subscript"}, " 使用真实字符格式。"]},
+    {"kind": "paragraph", "parts": ["结构见", {"ref": "FigureArchitecture", "cached": "图1"}, "；结果见", {"ref": "TableResults", "cached": "表1"}, "；参见第", {"ref": "ChapterMethod", "mode": "number", "cached": "1"}, "章。依据文献[", {"ref": "ReferenceAlpha", "mode": "number", "cached": "1"}, ",", {"ref": "ReferenceBeta", "mode": "number", "cached": "2"}, "]。"]},
+    {"kind": "caption", "label": "图", "sequence": "图", "bookmark": "FigureArchitecture", "cached": "1", "parts": [" 架构示意（此示例不含图片）"]},
+    {"kind": "caption", "label": "表", "sequence": "表", "bookmark": "TableResults", "cached": "1", "parts": [" 示例数据"]},
+    {"kind": "table", "rows": [[["项目"], ["面积 / mm", {"text": "2", "script": "superscript"}]], [["样品 A"], ["12"]]]},
+    {"kind": "equation", "bookmark": "EquationCurrent", "sequence": "Equation", "cached": "1.1", "chapter": true, "math": [{"sub": ["I", {"roman": "cell"}]}, "=", {"frac": ["V", "R"]}]},
+    {"kind": "paragraph", "parts": ["公式", {"ref": "EquationCurrent", "cached": "(1.1)"}, "给出计算关系。"]},
+    {"kind": "heading", "level": 1, "numbered": false, "parts": ["参考文献"]},
+    {"kind": "bibliography", "bookmark": "ReferenceAlpha", "parts": ["示例文献 A（占位信息，不可作为真实文献交付）。"]},
+    {"kind": "bibliography", "bookmark": "ReferenceBeta", "parts": ["示例文献 B（占位信息，不可作为真实文献交付）。"]}
+  ]
+}
